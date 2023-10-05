@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Light background color */
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark text color */
+        }
+        #search-container {
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            width: 100px; 
+            height: auto; 
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #0073e6; /* Add a 2px solid blue border */
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #0073e6; /* Blue button color */
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 220px); /* Adjusted height to account for the search bar and smaller icon */
+        }
+        a {
+            text-decoration: none;
+            color: #333; /* Dark text color for links */
+            font-size: 24px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        a img {
+            margin-right: 10px;
+            width: 40px; 
+            height: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <img src="icon.png" alt="Search Icon"> 
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div id="links-container">
+        <a href="https://github.com" target="_blank">
+            <img src="github.png" alt="GitHub"> 
+            GitHub
+        </a>
+        <a href="https://stackoverflow.com" target="_blank">
+            <img src="stackoverflow.png" alt="Stack Overflow"> 
+            Stack Overflow
+        </a>
+        <a href="https://chat.openai.com" target="_blank">
+            <img src="chatgpt.png" alt="ChatGPT"> 
+            ChatGPT
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="youtube.png" alt="YouTube">
+            YouTube
+        </a>
+    </div>
+
+</body>
+</html>
