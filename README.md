@@ -8,4 +8,7 @@ You can access this New Tab page at [this link](https://modern-newtab.proprogram
 
 ## Options
 
-By default, it is dark mode, to use light mode instead, go to the [light mode link](https://modern-newtab.proprogram.cloud/light-mode/).
+There are 2 options to configure using new tab page via the url, the entertainment interface, and dark/light mode. To use the entertainment interface, navigate to https://modern-newtab.proprogram.cloud/entertainment/ . To use light mode, navigate to https://modern-newtab.proprogram.cloud/light-mode.
+
+Entertainment light mode coming soon!
+

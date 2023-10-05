@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        #search-container {
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            width: 100px; 
+            height: auto; 
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #0073e6; 
+            border-radius: 5px;
+            outline: none; 
+        }
+        input[type="submit"] {
+            background-color: #0073e6;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 220px); 
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        a img {
+            margin-right: 10px;
+            width: 40px; 
+            height: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <img src="icon.png" alt="Search Icon"> 
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div id="links-container">
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="youtube.png" alt="YouTube">
+            YouTube
+        </a>
+        <a href="https://www.netflix.com" target="_blank">
+            <img src="netflix.png" alt="Netflix"> 
+            Netflix
+        </a>
+        <a href="https://www.disneyplus.com" target="_blank">
+            <img src="disneyplus.png" alt="Disney+"> 
+            Disney+
+        </a>
+        <a href="https://www.hulu.com" target="_blank">
+            <img src="hulu.png" alt="Hulu"> 
+            Hulu
+        </a>
+    </div>
+</body>
+</html>
